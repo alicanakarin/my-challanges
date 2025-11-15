@@ -1,0 +1,113 @@
+@import url("base.css");
+
+body {
+  background-color: var(--clr-blue950);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--clr-blue900);
+  max-width: 350px;
+  max-height: auto;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);
+
+  & .card-image {
+    padding: 30px 30px 20px 30px;
+
+    :hover {
+      filter: brightness(1.5);
+    }
+
+    & img {
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.card-content {
+  padding: 0px 30px 30px 30px;
+}
+
+.coin-title {
+  color: var(--clr-white);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.coin-description {
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--clr-blue500);
+  margin-bottom: 20px;
+}
+
+.text-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px 0px 25px 0px;
+}
+& .detail-left {
+  color: var(--clr-cyan400);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+
+  & img {
+    width: auto;
+  }
+}
+& .detail-right {
+  color: var(--clr-blue500);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+
+  & img {
+    width: auto;
+  }
+}
+
+.divider {
+  border-color: var(--clr-blue800);
+  border-top: 0.5px solid var(--clr-blue800);
+  margin: 0px 0px 20px 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+
+  & .profile-text {
+    color: var(--clr-blue500);
+    font-size: 16px;
+    font-weight: 200;
+
+    & span {
+      color: var(--clr-white);
+    }
+  }
+  & img {
+    border: 2px solid var(--clr-white);
+    border-radius: 50%;
+    width: 35px;
+  }
+}
