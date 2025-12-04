@@ -1,0 +1,148 @@
+@import url("./cssreset.css");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-gray100);
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 320px);
+  grid-template-areas:
+    "box1 box1 box2 box3"
+    "box4 box5 box5 box3";
+  gap: 24px;
+  width: 100%;
+  height: 100vh;
+}
+
+.box {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  align-items: flex-start;
+  padding: 32px 32px;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  line-height: 1.4;
+  color: var(--clr-gray100);
+}
+
+.profile-text h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.profile-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.texts p:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-bottom: 14px;
+  color: var(--clr-white);
+}
+.texts p:nth-of-type(2) {
+  color: var(--clr-gray200);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.box1 {
+  background-color: var(--clr-purple500);
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top 0px right 100px;
+
+  & img {
+    border: 2px solid var(--clr-purple300);
+  }
+}
+
+.box2 {
+  background-color: var(--clr-gray400);
+
+  & img {
+    border: 2px solid var(--clr-gray200);
+  }
+}
+
+.box3 {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+
+  & .profile-text {
+    color: var(--clr-gray400);
+  }
+
+  & .texts p:nth-of-type(1) {
+    color: var(--clr-gray400);
+  }
+
+  & .texts p:nth-of-type(2) {
+    color: var(--clr-gray300);
+  }
+
+  & img {
+    border: 2px solid var(--clr-gray200);
+  }
+}
+
+.box4 {
+  background-color: var(--clr-white);
+
+  & .profile-text {
+    color: var(--clr-gray400);
+  }
+
+  & .texts p:nth-of-type(1) {
+    color: var(--clr-gray400);
+  }
+
+  & .texts p:nth-of-type(2) {
+    color: var(--clr-gray300);
+  }
+  & img {
+    border: 2px solid var(--clr-gray200);
+  }
+}
+
+.box5 {
+  background-color: var(--clr-darkblue);
+
+  & .texts p:nth-of-type(1) {
+    color: var(--clr-gray200);
+  }
+
+  & .texts p:nth-of-type(2) {
+    color: var(--clr-gray200);
+  }
+  & img {
+    border: 2px solid var(--clr-purple500);
+  }
+}
